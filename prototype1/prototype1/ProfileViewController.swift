@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import CoreMotion
 
 class ProfileViewController: UIViewController {
+    
+    var motionManager = CMMotionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Profile"
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        motionManager.accelerometerUpdateInterval = 0.5
+        
+        motionManager.startAccelerometerUpdates(to: OperationQueue.current!, withHandler: {(data, error) in
+            if let myData = data {
+                print(myData)
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {
