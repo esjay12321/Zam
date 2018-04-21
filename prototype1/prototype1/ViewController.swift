@@ -47,10 +47,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
-    
-    
-    
-    
     func showLocationDisabledPopUp() {
         let alertController = UIAlertController(title: "Background Location Disabled", message: "In order to analyze your data, we need your location.", preferredStyle: .alert)
         
