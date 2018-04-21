@@ -35,7 +35,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first{
-            print(location.coordinate)
+            print("speed, mps")
+            print(location.speed)
+            print("latitude")
+            print(location.coordinate.latitude)
+            print("longitude")
+            print(location.coordinate.longitude)
         }
     }
     
