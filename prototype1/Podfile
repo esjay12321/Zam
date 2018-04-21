@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+pod 'Firebase'
+
+
+target 'prototype1' do
+  pod 'Alamofire', '~> 4.7'
+end
+
+# Pods for prototype1
+target 'prototype1Tests' do
+  inherit! :search_paths
+  # Pods for testing
+end
+
+target 'prototype1UITests' do
+  inherit! :search_paths
+  # Pods for testing
+end
