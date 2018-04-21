@@ -8,11 +8,15 @@
 
 import UIKit
 import CoreLocation
+import CoreData
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate{
 
     
     let locationManager = CLLocationManager()
+    
+    var coordinates: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,4 +74,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
 }
+
 
