@@ -10,6 +10,9 @@
 		006A2B3D208B6D1300C45D0B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A2B3C208B6D1300C45D0B /* Profile.storyboard */; };
 		006A2B3F208B6D2300C45D0B /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A2B3E208B6D2300C45D0B /* Statistics.storyboard */; };
 		006A2B41208B6FD300C45D0B /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A2B40208B6FD300C45D0B /* Messages.storyboard */; };
+		006A2B43208B77CC00C45D0B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2B42208B77CC00C45D0B /* ProfileViewController.swift */; };
+		006A2B45208B791B00C45D0B /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A2B44208B791B00C45D0B /* CustomNavController.swift */; };
+		006A2B49208B84A700C45D0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 006A2B48208B84A700C45D0B /* GoogleService-Info.plist */; };
 		8964E83F208B4C0500517F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964E83E208B4C0500517F6A /* AppDelegate.swift */; };
 		8964E841208B4C0500517F6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964E840208B4C0500517F6A /* ViewController.swift */; };
 		8964E844208B4C0500517F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8964E842208B4C0500517F6A /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 		006A2B3C208B6D1300C45D0B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		006A2B3E208B6D2300C45D0B /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		006A2B40208B6FD300C45D0B /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
+		006A2B42208B77CC00C45D0B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		006A2B44208B791B00C45D0B /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		006A2B48208B84A700C45D0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8964E83B208B4C0500517F6A /* prototype1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prototype1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8964E83E208B4C0500517F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8964E840208B4C0500517F6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +128,10 @@
 				8964E848208B4C0500517F6A /* Assets.xcassets */,
 				8964E84A208B4C0500517F6A /* LaunchScreen.storyboard */,
 				8964E84D208B4C0500517F6A /* Info.plist */,
+				006A2B48208B84A700C45D0B /* GoogleService-Info.plist */,
 				8964E845208B4C0500517F6A /* prototype1.xcdatamodeld */,
+				006A2B42208B77CC00C45D0B /* ProfileViewController.swift */,
+				006A2B44208B791B00C45D0B /* CustomNavController.swift */,
 			);
 			path = prototype1;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 				006A2B3D208B6D1300C45D0B /* Profile.storyboard in Resources */,
 				006A2B3F208B6D2300C45D0B /* Statistics.storyboard in Resources */,
 				8964E844208B4C0500517F6A /* Main.storyboard in Resources */,
+				006A2B49208B84A700C45D0B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +297,8 @@
 			files = (
 				8964E847208B4C0500517F6A /* prototype1.xcdatamodeld in Sources */,
 				8964E841208B4C0500517F6A /* ViewController.swift in Sources */,
+				006A2B43208B77CC00C45D0B /* ProfileViewController.swift in Sources */,
+				006A2B45208B791B00C45D0B /* CustomNavController.swift in Sources */,
 				8964E83F208B4C0500517F6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
