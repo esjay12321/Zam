@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tEI-bP-QcZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="YBp-KW-dxZ">
+            <objects>
+                <viewController id="tEI-bP-QcZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ds6-ig-mqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21/4/2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wry-Pp-5IS">
+                                <rect key="frame" x="133" y="40" width="108.5" height="24"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="MPR-GP-Uow">
+                                <rect key="frame" x="93" y="40" width="24" height="24"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="eGp-Qv-rhB">
+                                <rect key="frame" x="257.5" y="40" width="24" height="24"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.061096705496311188" green="0.16178649663925171" blue="0.29021060466766357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wry-Pp-5IS" firstAttribute="centerX" secondItem="MD2-tR-nAA" secondAttribute="centerX" id="1Lo-C0-IfF"/>
+                            <constraint firstItem="wry-Pp-5IS" firstAttribute="centerY" secondItem="MPR-GP-Uow" secondAttribute="centerY" id="9lw-J1-sv1"/>
+                            <constraint firstItem="wry-Pp-5IS" firstAttribute="leading" secondItem="MPR-GP-Uow" secondAttribute="trailing" constant="16" id="AXp-y5-Yyw"/>
+                            <constraint firstItem="eGp-Qv-rhB" firstAttribute="centerY" secondItem="MPR-GP-Uow" secondAttribute="centerY" id="Bzk-Yw-rZ6"/>
+                            <constraint firstItem="eGp-Qv-rhB" firstAttribute="leading" secondItem="wry-Pp-5IS" secondAttribute="trailing" constant="16" id="Mvt-JR-1HZ"/>
+                            <constraint firstItem="eGp-Qv-rhB" firstAttribute="height" secondItem="MPR-GP-Uow" secondAttribute="height" id="eak-Gq-jPw"/>
+                            <constraint firstItem="wry-Pp-5IS" firstAttribute="height" secondItem="MPR-GP-Uow" secondAttribute="height" id="kza-kE-Pyl"/>
+                            <constraint firstItem="wry-Pp-5IS" firstAttribute="top" secondItem="MD2-tR-nAA" secondAttribute="top" constant="20" id="s3x-Uf-Fow"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MD2-tR-nAA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llk-iV-fBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263.19999999999999" y="-84.107946026986511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left" width="24" height="24"/>
+        <image name="right" width="24" height="24"/>
+    </resources>
+</document>

@@ -29,8 +29,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         
         locationManager.allowsBackgroundLocationUpdates = true
         
-        //locationManager.allowsBackgroundLocationUpdates = true
-        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
