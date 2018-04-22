@@ -37,40 +37,49 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first{
             
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context = appDelegate.persistentContainer.viewContext
-            let entity = NSEntityDescription.entity(forEntityName: "Data", in: context)
-            let newData = NSManagedObject(entity: entity!, insertInto: context)
+//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//            let context = appDelegate.persistentContainer.viewContext
+//            let entity = NSEntityDescription.entity(forEntityName: "Data", in: context)
+            print("speed, mps", location.speed)
+//            print("latitude", location.coordinate.latitude)
+//            print("longitude", location.coordinate.longitude)
+            print("time, s", location.timestamp)
+        }
+    }
 
-            newData.setValue(location.speed, forKey: "speed")
-            newData.setValue(location.coordinate.latitude, forKey: "latitude")
-            newData.setValue(location.coordinate.longitude, forKey: "longitude")
-            newData.setValue(location.timestamp, forKey: "time")
+            
+//            let newData = NSManagedObject(entity: entity!, insertInto: context)
+
+//            newData.setValue(location.speed, forKey: "speed")
+//            newData.setValue(location.coordinate.latitude, forKey: "latitude")
+//            newData.setValue(location.coordinate.longitude, forKey: "longitude")
+//            newData.setValue(location.timestamp, forKey: "time")
             
 //            let DataSpeed = newData.value(forKey: "speed") as! Float
 //            let DataSpeed = newData.value(forKey: "latitude") as! Float
 //            let DataSpeed = newData.value(forKey: "longitude") as! Float
 //            let DataSpeed = newData.value(forKey: "time") as! Date
             
-            print("speed, mps: ", newData.value(forKey: "speed") as! Float)
-            print("latitude: ", newData.value(forKey: "latitude") as! Float)
-            print("longitude: ", newData.value(forKey: "longitude") as! Float)
-            print("time: ", newData.value(forKey: "time") as! Date)
+//            if context.hasChanges {
+//                do {
+//                    try context.save()
+//                    print(context)
+//
+//                    print("Successfully saved")
+//                } catch {
+//                    print("Failed saving")
+//                    // Replace this implementation with code to handle the error appropriately.
+//                    // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+//                    let nserror = error as NSError
+//                    fatalError("Unresolved error \(nserror)")
+//                }
+//            }
             
-            if context.hasChanges {
-                do {
-                    try context.save()
-                    print(context)
-                    
-                    print("Successfully saved")
-                } catch {
-                    print("Failed saving")
-                    // Replace this implementation with code to handle the error appropriately.
-                    // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                    let nserror = error as NSError
-                    fatalError("Unresolved error \(nserror)")
-                }
-            }
+//            print("speed, m/s: ", location.speed)
+////            print("latitude: ", newData.value(forKey: "latitude") as! Float)
+////            print("longitude: ", newData.value(forKey: "longitude") as! Float)
+//            print("time: ", location.timestamp)
+//
             
 //            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Data")
 //            request.returnsObjectsAsFaults = false
@@ -81,8 +90,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
 //                print("Failed")
 //            }
 
-        }
-    }
+//        }
+//    }
     
 //    func fetchdata(result: result) {
 //
