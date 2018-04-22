@@ -6,24 +6,52 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Messages View Controller-->
         <scene sceneID="GKb-fg-TRF">
             <objects>
-                <viewController id="ny4-TT-CEN" sceneMemberID="viewController">
+                <viewController id="ny4-TT-CEN" customClass="MessagesViewController" customModule="prototype1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRT-UV-byD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VG-6a-XnE">
+                                <rect key="frame" x="141.5" y="32" width="92.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table2" translatesAutoresizingMaskIntoConstraints="NO" id="czl-C2-c5W">
+                                <rect key="frame" x="0.0" y="77" width="375" height="400"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.061096705496311188" green="0.16178649663925171" blue="0.29021060466766357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="czl-C2-c5W" firstAttribute="top" secondItem="2VG-6a-XnE" secondAttribute="bottom" constant="24" id="LqV-g7-Ob4"/>
+                            <constraint firstItem="2VG-6a-XnE" firstAttribute="top" secondItem="cRT-UV-byD" secondAttribute="top" constant="32" id="NjX-Jk-XKZ"/>
+                            <constraint firstItem="2VG-6a-XnE" firstAttribute="centerX" secondItem="Ued-4C-aIR" secondAttribute="centerX" id="SyL-Pc-T9S"/>
+                            <constraint firstItem="czl-C2-c5W" firstAttribute="leading" secondItem="Ued-4C-aIR" secondAttribute="leading" id="Wbg-VH-aOs"/>
+                            <constraint firstItem="czl-C2-c5W" firstAttribute="height" secondItem="cRT-UV-byD" secondAttribute="height" multiplier="0.6" id="WyI-2e-grz"/>
+                            <constraint firstItem="czl-C2-c5W" firstAttribute="trailing" secondItem="Ued-4C-aIR" secondAttribute="trailing" id="tc1-lM-3hn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ued-4C-aIR"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NL3-hj-CFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="180"/>
+            <point key="canvasLocation" x="212" y="179.46026986506749"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="table2" width="756" height="736"/>
+    </resources>
 </document>

@@ -13,11 +13,22 @@ import CoreData
 class ViewController: UIViewController, CLLocationManagerDelegate{
 
     
+    @IBOutlet var profileImage: UIImageView!
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+
         // Do any additional setup after loading the view, typically from a nib.
+        profileImage.layer.borderWidth = 1
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.borderColor = UIColor.clear.cgColor
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
+        profileImage.clipsToBounds = true
         
         // for use when the app is open & in the background
         locationManager.requestAlwaysAuthorization()
