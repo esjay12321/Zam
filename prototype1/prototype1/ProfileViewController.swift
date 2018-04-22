@@ -11,23 +11,14 @@ import CoreMotion
 
 class ProfileViewController: UIViewController {
     
-    var motionManager = CMMotionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Profile"
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        motionManager.accelerometerUpdateInterval = 0.5
-        if let operationQueue = OperationQueue.current {
-            motionManager.startAccelerometerUpdates(to: operationQueue, withHandler: {(data, error) in
-                if let myData = data {
-                    print(myData)
-                }
-            })
-        }
-
     }
     
     override func didReceiveMemoryWarning() {

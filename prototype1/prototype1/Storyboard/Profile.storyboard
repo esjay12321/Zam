@@ -6,24 +6,82 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Profile View Controller-->
+        <!--View Controller-->
         <scene sceneID="ncc-nL-dHP">
             <objects>
-                <viewController id="81P-HB-bUb" customClass="ProfileViewController" customModule="prototype1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="81P-HB-bUb" customClass="ViewController" customModule="prototype1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x9L-sS-9dq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="SB4-9i-z6l">
+                                <rect key="frame" x="32" y="70" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bix-4Z-vc1"/>
+                                    <constraint firstAttribute="height" constant="100" id="i3g-wi-eBR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michelle Dams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-M0-lOv">
+                                <rect key="frame" x="152" y="70" width="138" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•Not Driving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="let-9I-7eF">
+                                <rect key="frame" x="152" y="99" width="121" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.41457474231719971" green="0.61955380439758301" blue="0.82355648279190063" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-2Z-bfZ">
+                                <rect key="frame" x="156.5" y="32" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table1" translatesAutoresizingMaskIntoConstraints="NO" id="ddo-5Q-mkI">
+                                <rect key="frame" x="0.0" y="202" width="375" height="333.5"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.061096705496311188" green="0.16178649663925171" blue="0.29021060466766357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pg9-2Z-bfZ" firstAttribute="top" secondItem="x9L-sS-9dq" secondAttribute="top" constant="32" id="0Nm-aa-yHI"/>
+                            <constraint firstItem="pg9-2Z-bfZ" firstAttribute="centerX" secondItem="bUJ-Po-Rn6" secondAttribute="centerX" id="Gmp-K9-pDD"/>
+                            <constraint firstItem="SB4-9i-z6l" firstAttribute="leading" secondItem="bUJ-Po-Rn6" secondAttribute="leading" constant="32" id="Hgu-lG-xq2"/>
+                            <constraint firstItem="SB4-9i-z6l" firstAttribute="top" secondItem="bUJ-Po-Rn6" secondAttribute="top" constant="50" id="JkK-tu-yfX"/>
+                            <constraint firstItem="TEX-M0-lOv" firstAttribute="leading" secondItem="SB4-9i-z6l" secondAttribute="trailing" constant="20" id="LUl-mj-xQu"/>
+                            <constraint firstItem="bUJ-Po-Rn6" firstAttribute="trailing" secondItem="ddo-5Q-mkI" secondAttribute="trailing" id="Pg0-3c-FEB"/>
+                            <constraint firstItem="ddo-5Q-mkI" firstAttribute="centerX" secondItem="bUJ-Po-Rn6" secondAttribute="centerX" id="XRH-aQ-m5f"/>
+                            <constraint firstItem="ddo-5Q-mkI" firstAttribute="leading" secondItem="bUJ-Po-Rn6" secondAttribute="leading" id="aE7-1q-Y8z"/>
+                            <constraint firstItem="let-9I-7eF" firstAttribute="top" secondItem="TEX-M0-lOv" secondAttribute="bottom" constant="8" id="aJY-xn-lad"/>
+                            <constraint firstItem="let-9I-7eF" firstAttribute="leading" secondItem="TEX-M0-lOv" secondAttribute="leading" id="fH4-MS-qyo"/>
+                            <constraint firstItem="ddo-5Q-mkI" firstAttribute="top" secondItem="SB4-9i-z6l" secondAttribute="bottom" constant="32" id="gtm-gJ-tbP"/>
+                            <constraint firstItem="ddo-5Q-mkI" firstAttribute="height" secondItem="x9L-sS-9dq" secondAttribute="height" multiplier="0.5" id="ntn-N9-Lyh"/>
+                            <constraint firstItem="TEX-M0-lOv" firstAttribute="top" secondItem="SB4-9i-z6l" secondAttribute="top" id="zSK-F5-m2L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bUJ-Po-Rn6"/>
                     </view>
+                    <connections>
+                        <outlet property="profileImage" destination="SB4-9i-z6l" id="y8R-Qo-Ue2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6u-MK-4GJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="140"/>
+            <point key="canvasLocation" x="69.599999999999994" y="139.880059970015"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="girl" width="2730" height="4096"/>
+        <image name="table1" width="954" height="772"/>
+    </resources>
 </document>

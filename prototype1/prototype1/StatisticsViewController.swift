@@ -22,7 +22,8 @@ class StatisticsViewController: UIViewController, UISplitViewControllerDelegate 
         let hour:Int = t/3600
         let minutes:Int = (t - hour * 3600)/60
         let seconds:Float = time - Float(hour * 3600 + minutes * 60)
-        return String("\(hour):\(minutes):\(seconds)")
+        let secondsString = String(format: "%.1f", seconds)
+        return String("\(hour):\(minutes):\(secondsString)")
     }
     
     func setup() {
@@ -42,7 +43,7 @@ class StatisticsViewController: UIViewController, UISplitViewControllerDelegate 
         let coordsSpace = ChartCoordsSpaceLeftBottomSingleAxis(chartSettings: chartSettings, chartFrame: chartFrame, xModel: xModel, yModel: yModel)
         let (xAxisLayer, yAxisLayer, innerFrame) = (coordsSpace.xAxisLayer, coordsSpace.yAxisLayer, coordsSpace.chartInnerFrame)
         
-        let lineModel = ChartLineModel(chartPoints: chartPoints, lineColor: UIColor(red:0.07, green:0.38, blue:0.62, alpha:1.0), animDuration: 1, animDelay: 0)
+        let lineModel = ChartLineModel(chartPoints: chartPoints, lineColor: UIColor.orange, animDuration: 1, animDelay: 0)
 //        let lineModel2 = ChartLineModel(chartPoints: chartPoints2, lineColor: UIColor.blue, animDuration: 1, animDelay: 0)
         let chartPointsLineLayer = ChartPointsLineLayer(xAxis: xAxisLayer.axis, yAxis: yAxisLayer.axis, lineModels: [lineModel], useView: false)
         
@@ -101,7 +102,10 @@ class StatisticsViewController: UIViewController, UISplitViewControllerDelegate 
         super.viewDidLoad()
         self.timeLabel.text = "00:00:00"
         self.speedLabel.text = "0KM/H"
-        self.title = "Statistics"
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
 //        setSplitSwipeEnabled(false)
 //        let chartConfig = ChartConfigXY(
 //            xAxisConfig: ChartAxisConfig(from: 2, to: 14, by: 2),
