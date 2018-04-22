@@ -64,8 +64,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJg-w6-CV3" customClass="RoundedShadowView" customModule="prototype1" customModuleProvider="target">
-                                <rect key="frame" x="56" y="507" width="184" height="100"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJg-w6-CV3" customClass="RoundedShadowView" customModule="prototype1" customModuleProvider="target">
+                                <rect key="frame" x="56" y="507" width="205" height="100"/>
                                 <color key="backgroundColor" red="0.16119121564212821" green="0.56816709844559588" blue="0.47333006845474163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.27889707548598153" green="0.59976117227979275" blue="0.23741012813623302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -121,7 +121,7 @@
                             <constraint firstItem="Yjc-fE-VYx" firstAttribute="leading" secondItem="MD2-tR-nAA" secondAttribute="leading" id="mWS-kV-PuQ"/>
                             <constraint firstItem="HCb-9g-4I4" firstAttribute="top" secondItem="Yjc-fE-VYx" secondAttribute="bottom" constant="10" id="pdo-Nw-5Na"/>
                             <constraint firstItem="Yjc-fE-VYx" firstAttribute="top" secondItem="MD2-tR-nAA" secondAttribute="top" constant="10" id="qP0-wt-eQ3"/>
-                            <constraint firstItem="vJg-w6-CV3" firstAttribute="width" secondItem="L4q-Q0-eDt" secondAttribute="width" multiplier="0.7" id="qnW-Fa-bh0"/>
+                            <constraint firstItem="vJg-w6-CV3" firstAttribute="width" secondItem="L4q-Q0-eDt" secondAttribute="width" multiplier="0.8" id="qnW-Fa-bh0"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="width" secondItem="ds6-ig-mqs" secondAttribute="width" multiplier="0.7" id="rTl-vM-JfY"/>
                             <constraint firstAttribute="trailing" secondItem="Yjc-fE-VYx" secondAttribute="trailing" id="x0e-Rf-ip5"/>
                             <constraint firstItem="BUp-DB-x0I" firstAttribute="centerY" secondItem="L4q-Q0-eDt" secondAttribute="centerY" id="xIo-RR-lqF"/>
