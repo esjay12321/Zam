@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-fE-VYx">
-                                <rect key="frame" x="0.0" y="40" width="375" height="17"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="17"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23o-Jd-3KA">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="17"/>
@@ -51,14 +51,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-9g-4I4">
-                                <rect key="frame" x="0.0" y="166" width="375" height="333.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="safeArea" id="RGZ-Wm-Hd2"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4q-Q0-eDt" customClass="RoundedShadowView" customModule="prototype1" customModuleProvider="target">
                                 <rect key="frame" x="56" y="507" width="262.5" height="100"/>
                                 <color key="backgroundColor" red="0.14212945103645325" green="0.25607189536094666" blue="0.38825142383575439" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.27889707549999998" green="0.59976117230000003" blue="0.23741012810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="NnP-AH-5zb"/>
                                 </constraints>
@@ -70,7 +66,8 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJg-w6-CV3" customClass="RoundedShadowView" customModule="prototype1" customModuleProvider="target">
                                 <rect key="frame" x="56" y="507" width="184" height="100"/>
-                                <color key="backgroundColor" red="0.064790062606334686" green="0.37892866134643555" blue="0.6196359395980835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.16119121564212821" green="0.56816709844559588" blue="0.47333006845474163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.27889707548598153" green="0.59976117227979275" blue="0.23741012813623302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
                                         <real key="value" value="3"/>
@@ -103,19 +100,27 @@
                                     <constraint firstAttribute="height" constant="100" id="xbw-Jq-B7U"/>
                                 </constraints>
                             </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-9g-4I4">
+                                <rect key="frame" x="0.0" y="57" width="375" height="333.5"/>
+                                <viewLayoutGuide key="safeArea" id="RGZ-Wm-Hd2"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.061096705496311188" green="0.16178649663925171" blue="0.29021060466766357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="HCb-9g-4I4" firstAttribute="leading" secondItem="MD2-tR-nAA" secondAttribute="leading" id="0By-hw-6iv"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="centerX" secondItem="MD2-tR-nAA" secondAttribute="centerX" id="2jH-jU-5M4"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="leading" secondItem="vJg-w6-CV3" secondAttribute="leading" id="FNq-Gy-6OB"/>
+                            <constraint firstItem="HCb-9g-4I4" firstAttribute="height" secondItem="ds6-ig-mqs" secondAttribute="height" multiplier="0.5" id="J6q-DD-hwQ"/>
                             <constraint firstItem="MD2-tR-nAA" firstAttribute="bottom" secondItem="L4q-Q0-eDt" secondAttribute="bottom" constant="60" id="RnV-EL-NtR"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="top" secondItem="vJg-w6-CV3" secondAttribute="top" id="SjZ-SD-Zi0"/>
                             <constraint firstItem="FVx-6x-hQl" firstAttribute="centerX" secondItem="MD2-tR-nAA" secondAttribute="centerX" id="T3t-Ke-heh"/>
                             <constraint firstItem="BUp-DB-x0I" firstAttribute="centerX" secondItem="L4q-Q0-eDt" secondAttribute="centerX" id="VXT-6M-mUt"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="bottom" secondItem="vJg-w6-CV3" secondAttribute="bottom" id="glb-3S-Iln"/>
-                            <constraint firstItem="Yjc-fE-VYx" firstAttribute="top" secondItem="MD2-tR-nAA" secondAttribute="top" constant="20" id="haP-WJ-kCv"/>
+                            <constraint firstItem="HCb-9g-4I4" firstAttribute="trailing" secondItem="MD2-tR-nAA" secondAttribute="trailing" id="h7f-4f-u0f"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="top" secondItem="FVx-6x-hQl" secondAttribute="bottom" constant="16" id="j9X-gk-gtE"/>
                             <constraint firstItem="Yjc-fE-VYx" firstAttribute="leading" secondItem="MD2-tR-nAA" secondAttribute="leading" id="mWS-kV-PuQ"/>
+                            <constraint firstItem="HCb-9g-4I4" firstAttribute="top" secondItem="Yjc-fE-VYx" secondAttribute="bottom" constant="10" id="pdo-Nw-5Na"/>
+                            <constraint firstItem="Yjc-fE-VYx" firstAttribute="top" secondItem="MD2-tR-nAA" secondAttribute="top" constant="10" id="qP0-wt-eQ3"/>
                             <constraint firstItem="vJg-w6-CV3" firstAttribute="width" secondItem="L4q-Q0-eDt" secondAttribute="width" multiplier="0.7" id="qnW-Fa-bh0"/>
                             <constraint firstItem="L4q-Q0-eDt" firstAttribute="width" secondItem="ds6-ig-mqs" secondAttribute="width" multiplier="0.7" id="rTl-vM-JfY"/>
                             <constraint firstAttribute="trailing" secondItem="Yjc-fE-VYx" secondAttribute="trailing" id="x0e-Rf-ip5"/>
