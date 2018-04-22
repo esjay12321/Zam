@@ -17,13 +17,17 @@ class StatisticsViewController: UIViewController, UISplitViewControllerDelegate 
     @IBOutlet var speedLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
     
+    func convertToTimeString(time:Float)->String {
+        let t:Int = Int(time)
+        let hour:Int = t/3600
+        let minutes:Int = (t - hour * 3600)/60
+        let seconds:Float = time - Float(hour * 3600 + minutes * 60)
+        return String("\(hour):\(minutes):\(seconds)")
+    }
     
     func setup() {
         let labelSettings = ChartLabelSettings(font: ExamplesDefaults.labelFont)
-        
-        let chartPoints = [(2, 2), (4, 4), (7, 1), (8, 11), (12, 3)].map{ChartPoint(x: ChartAxisValueDouble($0.0, labelSettings: labelSettings), y: ChartAxisValueDouble($0.1))}
-        
-//        let chartPoints2 = [(2, 3), (3, 1), (5, 6), (7, 2), (8, 14), (12, 6)].map{ChartPoint(x: ChartAxisValueDouble($0.0, labelSettings: labelSettings), y: ChartAxisValueDouble($0.1))}
+        let chartPoints = [(40231, 2), (40232, 4), (40233, 1), (40234, 11), (40235, 3)].map{ChartPoint(x: ChartAxisValueDouble($0.0, labelSettings: labelSettings), y: ChartAxisValueDouble($0.1))}
         
         let xValues = chartPoints.map{$0.x}
         
@@ -60,7 +64,11 @@ class StatisticsViewController: UIViewController, UISplitViewControllerDelegate 
 //                var time = chartPointWithScreenLoc.screenLoc.x + label.frame.width / 2
 //                var speed = chartPointWithScreenLoc.screenLoc.y + chartFrame.minY - label.frame.height / 2
                 var labels = chartPointWithScreenLoc.chartPoint.description.split(separator: ",")
-                self.timeLabel.text = "\(labels[0])"
+                guard let floatTime = Float(labels[0]) else {
+                    continue
+                }
+                let time = self.convertToTimeString(time:floatTime)
+                self.timeLabel.text = "\(time)"
                 self.speedLabel.text = "\(labels[1])KM/H"
                 label.backgroundColor = index == 0 ? UIColor(red:0.07, green:0.38, blue:0.62, alpha:1.0) : UIColor.blue
                 label.textColor = UIColor.white
