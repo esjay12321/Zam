@@ -20,12 +20,14 @@ class ProfileViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         motionManager.accelerometerUpdateInterval = 0.5
-        
-        motionManager.startAccelerometerUpdates(to: OperationQueue.current!, withHandler: {(data, error) in
-            if let myData = data {
-                print(myData)
-            }
-        })
+        if let operationQueue = OperationQueue.current {
+            motionManager.startAccelerometerUpdates(to: operationQueue, withHandler: {(data, error) in
+                if let myData = data {
+                    print(myData)
+                }
+            })
+        }
+
     }
     
     override func didReceiveMemoryWarning() {

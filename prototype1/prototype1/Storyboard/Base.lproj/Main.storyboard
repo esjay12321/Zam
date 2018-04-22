@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-123" y="-469"/>
         </scene>
-        <!--Custom Nav Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="n8N-1k-qrq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Sg-RT-C3x" customClass="CustomNavController" customModule="prototype1" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Sg-RT-C3x" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="statistics" id="cZC-5R-SJR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uQE-hr-CFY">
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="697" y="-142"/>
         </scene>
-        <!--Custom Nav Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="WWC-Zi-ZQ2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ws-xV-T35" customClass="CustomNavController" customModule="prototype1" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ws-xV-T35" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="profile" id="lQn-fa-DGo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="32F-ut-ife">
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="698" y="-840"/>
         </scene>
-        <!--Custom Nav Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="sjx-pi-5JX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2t0-n7-6DJ" customClass="CustomNavController" customModule="prototype1" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2t0-n7-6DJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="messages" id="pUG-sq-6NV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ptC-3a-Nd2">
