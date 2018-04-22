@@ -206,7 +206,6 @@
 				8964E838208B4C0500517F6A /* Frameworks */,
 				8964E839208B4C0500517F6A /* Resources */,
 				4460B0DD38A0814F966394C2 /* [CP] Embed Pods Frameworks */,
-				876BE37C83C6C65CB326261B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,8 +224,6 @@
 				8964E84E208B4C0500517F6A /* Sources */,
 				8964E84F208B4C0500517F6A /* Frameworks */,
 				8964E850208B4C0500517F6A /* Resources */,
-				AE0D3B58AB6A90D452A56651 /* [CP] Embed Pods Frameworks */,
-				64EDEFB80D4830074C957C00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,8 +243,6 @@
 				8964E859208B4C0500517F6A /* Sources */,
 				8964E85A208B4C0500517F6A /* Frameworks */,
 				8964E85B208B4C0500517F6A /* Resources */,
-				B208EA1DE105E1E1345B7BAC /* [CP] Embed Pods Frameworks */,
-				0226246498B70282FCF853F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,21 +340,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0226246498B70282FCF853F9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prototype1UITests/Pods-prototype1UITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		03A0791BAB02CE901891476E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,77 +403,19 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-prototype1/Pods-prototype1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prototype1/Pods-prototype1-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64EDEFB80D4830074C957C00 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prototype1Tests/Pods-prototype1Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		876BE37C83C6C65CB326261B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prototype1/Pods-prototype1-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE0D3B58AB6A90D452A56651 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prototype1Tests/Pods-prototype1Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B208EA1DE105E1E1345B7BAC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prototype1UITests/Pods-prototype1UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -664,7 +586,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 22P8HZ7MFH;
 				INFOPLIST_FILE = prototype1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zam.prototype1;
@@ -680,7 +601,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 22P8HZ7MFH;
 				INFOPLIST_FILE = prototype1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zam.prototype1;
